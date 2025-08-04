@@ -6,7 +6,7 @@
 
 # Interface: IFetchetOptions
 
-Defined in: types.ts:1
+Defined in: [types.ts:1](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/types.ts#L1)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: types.ts:1
 
 > `optional` **body**: [`FetchetRequestBody`](../type-aliases/FetchetRequestBody.md) \| `Record`\<`string` \| `number` \| `symbol`, `any`\>
 
-Defined in: types.ts:2
+Defined in: [types.ts:2](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/types.ts#L2)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: types.ts:2
 
 > `optional` **config**: `RequestInit`
 
-Defined in: types.ts:3
+Defined in: [types.ts:3](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/types.ts#L3)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: types.ts:3
 
 > `optional` **headers**: `HeadersInit`
 
-Defined in: types.ts:4
+Defined in: [types.ts:4](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/types.ts#L4)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: types.ts:4
 
 > `optional` **json**: `boolean`
 
-Defined in: types.ts:5
+Defined in: [types.ts:5](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/types.ts#L5)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: types.ts:5
 
 > `optional` **method**: [`FetchetRequestMethod`](../enumerations/FetchetRequestMethod.md)
 
-Defined in: types.ts:6
+Defined in: [types.ts:6](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/types.ts#L6)
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: types.ts:6
 
 > `optional` **parameters**: [`FetchetParameter`](../type-aliases/FetchetParameter.md)
 
-Defined in: types.ts:7
+Defined in: [types.ts:7](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/types.ts#L7)

@@ -6,7 +6,7 @@
 
 # Enumeration: FetchetRequestMethod
 
-Defined in: types.ts:33
+Defined in: [types.ts:33](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/types.ts#L33)
 
 Enum representing [HTTP request methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods)
 
@@ -16,7 +16,7 @@ Enum representing [HTTP request methods](https://developer.mozilla.org/en-US/doc
 
 > **DELETE**: `"DELETE"`
 
-Defined in: types.ts:44
+Defined in: [types.ts:44](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/types.ts#L44)
 
 Delete the specified resource
 
@@ -26,7 +26,7 @@ Delete the specified resource
 
 > **GET**: `"GET"`
 
-Defined in: types.ts:35
+Defined in: [types.ts:35](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/types.ts#L35)
 
 Request a representation of the specified resource
 
@@ -36,7 +36,7 @@ Request a representation of the specified resource
 
 > **HEAD**: `"HEAD"`
 
-Defined in: types.ts:53
+Defined in: [types.ts:53](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/types.ts#L53)
 
 Ask for a response identical to a GET request, but without a response body
 
@@ -46,7 +46,7 @@ Ask for a response identical to a GET request, but without a response body
 
 > **OPTIONS**: `"OPTIONS"`
 
-Defined in: types.ts:50
+Defined in: [types.ts:50](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/types.ts#L50)
 
 Describe the communication options for the target resource
 
@@ -56,7 +56,7 @@ Describe the communication options for the target resource
 
 > **PATCH**: `"PATCH"`
 
-Defined in: types.ts:47
+Defined in: [types.ts:47](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/types.ts#L47)
 
 Applies partial modifications to a resource
 
@@ -66,7 +66,7 @@ Applies partial modifications to a resource
 
 > **POST**: `"POST"`
 
-Defined in: types.ts:38
+Defined in: [types.ts:38](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/types.ts#L38)
 
 Submit an entity to the specified resource
 
@@ -76,6 +76,6 @@ Submit an entity to the specified resource
 
 > **PUT**: `"PUT"`
 
-Defined in: types.ts:41
+Defined in: [types.ts:41](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/types.ts#L41)
 
 Replace all current representations of the target resource with the request
