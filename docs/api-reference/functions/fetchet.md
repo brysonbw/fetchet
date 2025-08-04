@@ -8,7 +8,7 @@
 
 > **fetchet**(`url`, `options?`): `Promise`\<`Response`\>
 
-Defined in: fetchet.ts:31
+Defined in: [fetchet.ts:31](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/fetchet.ts#L31)
 
 fetchet – HTTP fetch client
 
