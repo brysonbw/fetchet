@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "allowArbitraryExtensions": true,
+    "declaration": true,
+    "declarationMap": true,
+    "moduleDetection": "force",
+    "module": "NodeNext",
+    "target": "ES2022",
+    "lib": ["dom", "es2015"],
+    "isolatedModules": true,
+    "rewriteRelativeImportExtensions": true,
+    "noEmit": true,
+    "outDir": "dist",
+    "removeComments": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist", "node_modules"]
+}

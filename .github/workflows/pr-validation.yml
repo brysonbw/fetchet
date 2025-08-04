@@ -1,0 +1,53 @@
+name: "PR Validation"
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  validate-dist:
+    if: github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            dist:
+              - 'dist/**'
+
+      - name: Comment if dist/ was changed
+        if: steps.filter.outputs.dist == 'true'
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ⚠️ **Warning**: Modifications detected inside the dist/ folder.
+            Since these files are created automatically during our release builds, please do not edit them directly.
+            To keep the project consistent, kindly revert any changes to dist/ in your pull request.
+  validate-docs-api-reference:
+    if: github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            api-docs:
+              - 'docs/api-reference/**'
+
+      - name: Comment if docs/api-reference/ was changed
+        if: steps.filter.outputs.api-docs == 'true'
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ⚠️ **Warning**: You've modified files in `docs/api-reference/`.  
+            These files are generated automatically during our release builds, please do not edit them directly.
+            To keep the project consistent, kindly revert any changes to docs/api-reference/ in your pull request.
