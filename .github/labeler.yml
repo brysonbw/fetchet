@@ -25,7 +25,7 @@
           ["tsconfig.json", "tsup.config.ts", "vite.config.ts"]
 
 "pr::feature":
-  - head-branch: ["feature", "feat"]
+  - head-branch: ["feature", "feat", "enhancement"]
 
 "pr::patch":
   - head-branch: ["update", "edit"]
