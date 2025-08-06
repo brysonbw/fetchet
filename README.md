@@ -19,7 +19,9 @@ npm install fetchet
 ## Usage
 
 ```javaScript
-await fetchet('https://dummyjson.com/posts').then((response) => console.log(response))
+const response = await fetchet("https://dummyjson.com/posts");
+const data = await response.json();
+console.log(data);
 ```
 
 > `GET` is the default HTTP method if no method is specified in the options, similar to the native fetch API.
@@ -28,30 +30,36 @@ await fetchet('https://dummyjson.com/posts').then((response) => console.log(resp
 
 Fetchet is a lightweight wrapper around the native fetch API. It enhances convenience by extending the options object with features like automatic JSON parsing and support for passing query parameters as an object.
 
-### `options.parameters`
+### Features
+
+#### `options.parameters`
 
 The `parameters` option (an object) in the request options is automatically parsed into URL search params string and appended to the request URL.
 
 ```javaScript
 const parameters = { limit: "10", skip: "10", select: "name,ingredients,instructions" };
-await fetchet("https://dummyjson.com/recipes", { parameters } ).then((response) => console.log(response));
+const response = await fetchet("https://dummyjson.com/recipes", { parameters });
+const data = await response.json();
+console.log(data);
 ```
 
 > Request URL: `https://dummyjson.com/recipes?limit=10&skip=10&select=name,ingredients,instructions`
 
-### `options.json`
+#### `options.json`
 
 The `json` option (a boolean) is set to true by default. This means you don't need to manually set headers: `{ 'Content-Type': 'application/json' }` or use `JSON.stringify(body)` for POST, PUT, or PATCH requests. If you want to send the body in a non-JSON format, set `json` to false.
 
 ```javaScript
-await fetchet('https://dummyjson.com/posts/add', {
+const response = await fetchet('https://dummyjson.com/posts/add', {
   method: 'POST',
   body: {
     title: 'How can AI and/or AGI be leveraged to improve the well-being and future of humanity?',
     userId: 5,
     /* other post data */
   }
-}).then((response) => console.log(response))
+});
+const data = await response.json();
+console.log(data);
 ```
 
 ## Contributing
