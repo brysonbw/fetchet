@@ -7,7 +7,8 @@ import {
   FetchetErrorMessage,
   FetchetHeaders,
   FetchetJSON,
-  FetchetConfig
+  FetchetConfig,
+  FetchetResponse
 } from "./types.ts";
 import {
   getURLSearchParamsString,
@@ -26,7 +27,7 @@ import {
  * @param {FetchetHeaders} [options.headers]  An object. array, or Headers object containing the HTTP request headers
  * @param {FetchetJSON} [options.json] Specifies if request body contents to be handled as JSON
  * @param {FetchetConfig} [options.config] Request configurations
- * @returns {Promise<Response>}
+ * @returns {FetchetResponse}
  */
 export async function fetchet(
   url: FetchetRequest,
@@ -38,7 +39,7 @@ export async function fetchet(
     json = true,
     config
   }: IFetchetOptions = {}
-): Promise<Response> {
+): FetchetResponse {
   // Config request url - add query params string (if `parameters` defined)
   const URL = parameters
     ? `${url}${getURLSearchParamsString(parameters)}`
@@ -101,8 +102,7 @@ export async function fetchet(
     if (!response.ok) {
       throw new Error(`${response.status}`);
     }
-    const json = await response.json();
-    return json;
+    return response;
   } catch (error: any) {
     console.error(error.message);
     return error;
