@@ -6,9 +6,9 @@
 
 # Function: fetchet()
 
-> **fetchet**(`url`, `options?`): `Promise`\<`Response`\>
+> **fetchet**(`url`, `options?`): [`FetchetResponse`](../type-aliases/FetchetResponse.md)
 
-Defined in: [fetchet.ts:31](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/fetchet.ts#L31)
+Defined in: [fetchet.ts:32](https://github.com/brysonbw/fetchet/blob/e48d311708960711d1b27105e9cd406984b0eda2/src/fetchet.ts#L32)
 
 fetchet – HTTP fetch client
 
@@ -28,4 +28,4 @@ Fetchet options
 
 ## Returns
 
-`Promise`\<`Response`\>
+[`FetchetResponse`](../type-aliases/FetchetResponse.md)

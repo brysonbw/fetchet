@@ -111,8 +111,7 @@ async function fetchet(url, {
     if (!response.ok) {
       throw new Error(`${response.status}`);
     }
-    const json2 = await response.json();
-    return json2;
+    return response;
   } catch (error) {
     console.error(error.message);
     return error;

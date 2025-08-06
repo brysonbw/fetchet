@@ -21,6 +21,7 @@
 - [FetchetParameter](type-aliases/FetchetParameter.md)
 - [FetchetRequest](type-aliases/FetchetRequest.md)
 - [FetchetRequestBody](type-aliases/FetchetRequestBody.md)
+- [FetchetResponse](type-aliases/FetchetResponse.md)
 - [PrimitiveType](type-aliases/PrimitiveType.md)
 
 ## Functions

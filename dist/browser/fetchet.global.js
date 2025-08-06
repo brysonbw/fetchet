@@ -215,7 +215,7 @@ var fetchet = function() {
     var fetchet = // src/fetchet.ts
     function fetchet(_0) {
         return _async_to_generator(function(url) {
-            var _ref, parameters, _ref_method, method, body, headers, _ref_json, json, config, URL, methodWhitelist, payload, response, json2, error;
+            var _ref, parameters, _ref_method, method, body, headers, _ref_json, json, config, URL, methodWhitelist, payload, response, error;
             var _arguments = arguments;
             return _ts_generator(this, function(_state) {
                 switch(_state.label){
@@ -254,9 +254,9 @@ var fetchet = function() {
                     case 1:
                         _state.trys.push([
                             1,
-                            4,
+                            3,
                             ,
-                            5
+                            4
                         ]);
                         return [
                             4,
@@ -272,23 +272,17 @@ var fetchet = function() {
                             throw new Error("".concat(response.status));
                         }
                         return [
-                            4,
-                            response.json()
+                            2,
+                            response
                         ];
                     case 3:
-                        json2 = _state.sent();
-                        return [
-                            2,
-                            json2
-                        ];
-                    case 4:
                         error = _state.sent();
                         console.error(error.message);
                         return [
                             2,
                             error
                         ];
-                    case 5:
+                    case 4:
                         return [
                             2
                         ];
