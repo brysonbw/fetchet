@@ -15,6 +15,7 @@ export type FetchetHeaders = HeadersInit;
 /** Specifies if request body contents to be handled as JSON */
 export type FetchetJSON = boolean;
 export type FetchetParameter = Record<string, string> | URLSearchParams;
+export type FetchetResponse = Promise<Response>;
 
 export type PrimitiveType =
   | "string"
