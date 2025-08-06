@@ -12,6 +12,7 @@ type FetchetRequest = RequestInfo | URL;
 type FetchetHeaders = HeadersInit;
 type FetchetJSON = boolean;
 type FetchetParameter = Record<string, string> | URLSearchParams;
+type FetchetResponse = Promise<Response>;
 type PrimitiveType = "string" | "number" | "bigint" | "boolean" | "symbol" | "undefined" | "object" | "function";
 declare enum FetchetRequestMethod {
     GET = "GET",
@@ -28,6 +29,6 @@ declare enum FetchetErrorMessage {
     UnsupportedHTTPMethod = "Cannot read HTTP method"
 }
 
-declare function fetchet(url: FetchetRequest, { parameters, method, body, headers, json, config }?: IFetchetOptions): Promise<Response>;
+declare function fetchet(url: FetchetRequest, { parameters, method, body, headers, json, config }?: IFetchetOptions): FetchetResponse;
 
-export { type FetchetConfig, FetchetErrorMessage, type FetchetHeaders, type FetchetJSON, type FetchetParameter, type FetchetRequest, type FetchetRequestBody, FetchetRequestMethod, type IFetchetOptions, type PrimitiveType, fetchet };
+export { type FetchetConfig, FetchetErrorMessage, type FetchetHeaders, type FetchetJSON, type FetchetParameter, type FetchetRequest, type FetchetRequestBody, FetchetRequestMethod, type FetchetResponse, type IFetchetOptions, type PrimitiveType, fetchet };

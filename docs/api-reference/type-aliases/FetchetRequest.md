@@ -8,4 +8,4 @@
 
 > **FetchetRequest** = `RequestInfo` \| `URL`
 
-Defined in: [types.ts:13](https://github.com/brysonbw/fetchet/blob/cb463bcedb07349f7406e3d774822146d47c777d/src/types.ts#L13)
+Defined in: [types.ts:13](https://github.com/brysonbw/fetchet/blob/e48d311708960711d1b27105e9cd406984b0eda2/src/types.ts#L13)
