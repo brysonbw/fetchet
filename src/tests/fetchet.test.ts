@@ -11,7 +11,9 @@ const DUMMY_JSON_BASE_API_URL = "https://dummyjson.com";
 describe("fetchet()", () => {
   describe("GET", () => {
     it("gets all recipes", async () => {
-      const response = await fetchet(`${DUMMY_JSON_BASE_API_URL}/recipes`);
+      const response = await fetchet(`${DUMMY_JSON_BASE_API_URL}/recipes`).then(
+        (response) => response.json()
+      );
       expect(response).toBeDefined();
       expect(response).toBeTypeOf("object");
       expect(Object.keys(response)).toEqual(
@@ -25,7 +27,9 @@ describe("fetchet()", () => {
     });
 
     it("gets a single recipe", async () => {
-      const response = await fetchet(`${DUMMY_JSON_BASE_API_URL}/recipes/1`);
+      const response = await fetchet(
+        `${DUMMY_JSON_BASE_API_URL}/recipes/1`
+      ).then((response) => response.json());
       expect(response).toBeDefined();
       expect(response).toBeTypeOf("object");
       expect(Object.keys(response).length).toBeGreaterThan(0);
@@ -36,7 +40,7 @@ describe("fetchet()", () => {
     it("gets queried recipe with search parameters in url", async () => {
       const response = await fetchet(
         `${DUMMY_JSON_BASE_API_URL}/recipes?limit=10&skip=10&select=name,ingredients,instructions`
-      );
+      ).then((response) => response.json());
       expect(response).toBeDefined();
       expect(response).toBeTypeOf("object");
       expect(Object.keys(response)).toEqual(
@@ -58,7 +62,7 @@ describe("fetchet()", () => {
       expect(parameters).toBeTypeOf("object");
       const response = await fetchet(`${DUMMY_JSON_BASE_API_URL}/recipes`, {
         parameters
-      });
+      }).then((response) => response.json());
       expect(response).toBeDefined();
       expect(response).toBeTypeOf("object");
       expect(Object.keys(response)).toEqual(
@@ -80,7 +84,7 @@ describe("fetchet()", () => {
       expect(parameters).toBeInstanceOf(URLSearchParams);
       const response = await fetchet(`${DUMMY_JSON_BASE_API_URL}/recipes`, {
         parameters
-      });
+      }).then((response) => response.json());
       expect(response).toBeDefined();
       expect(response).toBeTypeOf("object");
       expect(Object.keys(response)).toEqual(
@@ -98,7 +102,7 @@ describe("fetchet()", () => {
       const response = await fetchet(`${DUMMY_JSON_BASE_API_URL}/recipes/add`, {
         method: "POST",
         body: { name: "Tasty Pizza" }
-      });
+      }).then((response) => response.json());
       expect(response).toBeDefined();
       expect(response).toBeTypeOf("object");
       expect(response).toHaveProperty("id");
@@ -111,7 +115,7 @@ describe("fetchet()", () => {
       const response = await fetchet(`${DUMMY_JSON_BASE_API_URL}/recipes/1`, {
         method: "PUT",
         body: { name: "Tasty Pizza" }
-      });
+      }).then((response) => response.json());
       expect(response).toBeDefined();
       expect(response).toBeTypeOf("object");
       expect(response).toHaveProperty("id");
@@ -124,7 +128,7 @@ describe("fetchet()", () => {
       const response = await fetchet(`${DUMMY_JSON_BASE_API_URL}/recipes/1`, {
         method: "PATCH",
         body: { name: "Tasty Pizza" }
-      });
+      }).then((response) => response.json());
       expect(response).toBeDefined();
       expect(response).toBeTypeOf("object");
       expect(response).toHaveProperty("id");
@@ -136,7 +140,7 @@ describe("fetchet()", () => {
     it("deletes a recipe", async () => {
       const response = await fetchet(`${DUMMY_JSON_BASE_API_URL}/recipes/1`, {
         method: "DELETE"
-      });
+      }).then((response) => response.json());
       expect(response).toBeDefined();
       expect(response).toBeTypeOf("object");
       expect(response).toHaveProperty("id");
