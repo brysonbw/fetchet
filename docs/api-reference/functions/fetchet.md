@@ -8,7 +8,7 @@
 
 > **fetchet**(`url`, `options?`): [`FetchetResponse`](../type-aliases/FetchetResponse.md)
 
-Defined in: [fetchet.ts:32](https://github.com/brysonbw/fetchet/blob/e48d311708960711d1b27105e9cd406984b0eda2/src/fetchet.ts#L32)
+Defined in: [fetchet.ts:32](https://github.com/brysonbw/fetchet/blob/7b4bb591bcda340766d9cc0bbd17667f15536f84/src/fetchet.ts#L32)
 
 fetchet – HTTP fetch client
 

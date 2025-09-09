@@ -1,6 +1,6 @@
 {
   "name": "fetchet",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "The compact, Promise-based, and browser-native HTTP fetch wrapper",
   "type": "module",
   "main": "./dist/cjs/fetchet.cjs",
