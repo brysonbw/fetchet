@@ -20,8 +20,7 @@ jobs:
 
     strategy:
       matrix:
-        # TODO: Add older node versions: 12, 14, 16, 18
-        node-version: [20.x, 22.x, 24.x]
+        node-version: [22.x, 24.x]
       fail-fast: false
 
     steps:
