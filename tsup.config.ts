@@ -18,7 +18,7 @@ const options = {
   tsconfig: "./tsconfig.json"
 };
 
-// TODO: Might have to look into another build tool to satisfy multiple builds if things get more complex
+// TODO: Swtich to a different build tool (e.g rollup) possibly
 export default defineConfig([
   // Modern ESM
   {
