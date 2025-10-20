@@ -20,7 +20,7 @@ jobs:
 
       - name: Comment if dist/ was changed
         if: steps.filter.outputs.dist == 'true'
-        uses: peter-evans/create-or-update-comment@v4
+        uses: peter-evans/create-or-update-comment@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.pull_request.number }}
@@ -43,7 +43,7 @@ jobs:
 
       - name: Comment if docs/api-reference/ was changed
         if: steps.filter.outputs.api-docs == 'true'
-        uses: peter-evans/create-or-update-comment@v4
+        uses: peter-evans/create-or-update-comment@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.pull_request.number }}
