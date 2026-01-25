@@ -8,4 +8,4 @@
 
 > **PrimitiveType** = `"string"` \| `"number"` \| `"bigint"` \| `"boolean"` \| `"symbol"` \| `"undefined"` \| `"object"` \| `"function"`
 
-Defined in: [types.ts:20](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a8ad9414c41b0e29ec72d8bc90a/src/types.ts#L20)
+Defined in: [types.ts:20](https://github.com/brysonbw/fetchet/blob/414daab09669e5ee620ab70cd3ababe8d35981b2/src/types.ts#L20)
