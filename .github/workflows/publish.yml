@@ -67,5 +67,3 @@ jobs:
       # NPM Release
       - name: Publish the release to NPM
         run: npm publish --provenance --access public --tag ${{ steps.fallback_tag.outputs.tag }}
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
