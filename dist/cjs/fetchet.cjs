@@ -1,4 +1,4 @@
-/*! fetchet | (c) 2025 Bryson Ward | MIT License */
+/*! fetchet | (c) 2026 Bryson Ward | MIT License */
 "use strict";
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;

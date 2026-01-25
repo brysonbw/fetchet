@@ -6,7 +6,7 @@
 
 # Enumeration: FetchetErrorMessage
 
-Defined in: [types.ts:61](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a8ad9414c41b0e29ec72d8bc90a/src/types.ts#L61)
+Defined in: [types.ts:61](https://github.com/brysonbw/fetchet/blob/414daab09669e5ee620ab70cd3ababe8d35981b2/src/types.ts#L61)
 
 Enum representing common error messages thrown during request preparation or parsing
 
@@ -16,7 +16,7 @@ Enum representing common error messages thrown during request preparation or par
 
 > **HeadersInvalid**: `"Cannot read Headers"`
 
-Defined in: [types.ts:62](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a8ad9414c41b0e29ec72d8bc90a/src/types.ts#L62)
+Defined in: [types.ts:62](https://github.com/brysonbw/fetchet/blob/414daab09669e5ee620ab70cd3ababe8d35981b2/src/types.ts#L62)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [types.ts:62](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08
 
 > **UndefinedOrInvalidProperty**: `"Cannot read undefined or invalid properties"`
 
-Defined in: [types.ts:63](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a8ad9414c41b0e29ec72d8bc90a/src/types.ts#L63)
+Defined in: [types.ts:63](https://github.com/brysonbw/fetchet/blob/414daab09669e5ee620ab70cd3ababe8d35981b2/src/types.ts#L63)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [types.ts:63](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08
 
 > **UnsupportedHTTPMethod**: `"Cannot read HTTP method"`
 
-Defined in: [types.ts:64](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a8ad9414c41b0e29ec72d8bc90a/src/types.ts#L64)
+Defined in: [types.ts:64](https://github.com/brysonbw/fetchet/blob/414daab09669e5ee620ab70cd3ababe8d35981b2/src/types.ts#L64)

@@ -1,4 +1,4 @@
-/*! fetchet | (c) 2025 Bryson Ward | MIT License */
+/*! fetchet | (c) 2026 Bryson Ward | MIT License */
 
 // src/types.ts
 var FetchetRequestMethod = /* @__PURE__ */ ((FetchetRequestMethod2) => {

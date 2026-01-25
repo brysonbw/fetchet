@@ -8,6 +8,6 @@
 
 > **FetchetJSON** = `boolean`
 
-Defined in: [types.ts:16](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a8ad9414c41b0e29ec72d8bc90a/src/types.ts#L16)
+Defined in: [types.ts:16](https://github.com/brysonbw/fetchet/blob/414daab09669e5ee620ab70cd3ababe8d35981b2/src/types.ts#L16)
 
 Specifies if request body contents to be handled as JSON

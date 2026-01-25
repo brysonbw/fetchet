@@ -6,7 +6,7 @@
 
 # Interface: IFetchetOptions
 
-Defined in: [types.ts:1](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a8ad9414c41b0e29ec72d8bc90a/src/types.ts#L1)
+Defined in: [types.ts:1](https://github.com/brysonbw/fetchet/blob/414daab09669e5ee620ab70cd3ababe8d35981b2/src/types.ts#L1)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [types.ts:1](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a
 
 > `optional` **body**: [`FetchetRequestBody`](../type-aliases/FetchetRequestBody.md) \| `Record`\<`string` \| `number` \| `symbol`, `any`\>
 
-Defined in: [types.ts:2](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a8ad9414c41b0e29ec72d8bc90a/src/types.ts#L2)
+Defined in: [types.ts:2](https://github.com/brysonbw/fetchet/blob/414daab09669e5ee620ab70cd3ababe8d35981b2/src/types.ts#L2)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [types.ts:2](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a
 
 > `optional` **config**: `RequestInit`
 
-Defined in: [types.ts:3](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a8ad9414c41b0e29ec72d8bc90a/src/types.ts#L3)
+Defined in: [types.ts:3](https://github.com/brysonbw/fetchet/blob/414daab09669e5ee620ab70cd3ababe8d35981b2/src/types.ts#L3)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [types.ts:3](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a
 
 > `optional` **headers**: `HeadersInit`
 
-Defined in: [types.ts:4](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a8ad9414c41b0e29ec72d8bc90a/src/types.ts#L4)
+Defined in: [types.ts:4](https://github.com/brysonbw/fetchet/blob/414daab09669e5ee620ab70cd3ababe8d35981b2/src/types.ts#L4)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [types.ts:4](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a
 
 > `optional` **json**: `boolean`
 
-Defined in: [types.ts:5](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a8ad9414c41b0e29ec72d8bc90a/src/types.ts#L5)
+Defined in: [types.ts:5](https://github.com/brysonbw/fetchet/blob/414daab09669e5ee620ab70cd3ababe8d35981b2/src/types.ts#L5)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [types.ts:5](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a
 
 > `optional` **method**: [`FetchetRequestMethod`](../enumerations/FetchetRequestMethod.md)
 
-Defined in: [types.ts:6](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a8ad9414c41b0e29ec72d8bc90a/src/types.ts#L6)
+Defined in: [types.ts:6](https://github.com/brysonbw/fetchet/blob/414daab09669e5ee620ab70cd3ababe8d35981b2/src/types.ts#L6)
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: [types.ts:6](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a
 
 > `optional` **parameters**: [`FetchetParameter`](../type-aliases/FetchetParameter.md)
 
-Defined in: [types.ts:7](https://github.com/brysonbw/fetchet/blob/1c4ef54e51d08a8ad9414c41b0e29ec72d8bc90a/src/types.ts#L7)
+Defined in: [types.ts:7](https://github.com/brysonbw/fetchet/blob/414daab09669e5ee620ab70cd3ababe8d35981b2/src/types.ts#L7)
